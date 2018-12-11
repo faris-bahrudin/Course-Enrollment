@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 import {CourseEnrollmentService} from '../../services/course-enrollment.service';
 
 @Component({
-  selector: 'trg-apprentice-list',
+  selector: 'trg-course-list',
   templateUrl: './course-list.page.html',
 })
 export class CourseListPage {
@@ -13,6 +13,14 @@ export class CourseListPage {
   public dataSource: Observable<Course[]>;
 
   constructor(private courseEnrollmentService: CourseEnrollmentService) {
+  }
+
+  ngOnInit(){
+    this.dataSource=this.courseEnrollmentService.findCourses();
+  }
+
+  view(course: Course): void{
+    console.log(JSON.stringify(course));
   }
 
 }

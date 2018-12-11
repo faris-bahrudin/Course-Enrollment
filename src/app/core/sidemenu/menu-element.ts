@@ -26,6 +26,13 @@ export const menus = [
         'link': '/course-enrollment/lecturers/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
+      },
+      {
+        'name': 'All Student',
+        'icon': 'filter_list',
+        'link': '/course-enrollment/students/list',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
       }
     ]
   }

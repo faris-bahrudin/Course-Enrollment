@@ -1,6 +1,6 @@
 export interface  Course {
-  name: string;
   code: string;
+  name: string;
   section: string;
   credit: number;
 }

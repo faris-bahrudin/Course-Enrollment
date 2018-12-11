@@ -1,1 +1,43 @@
-<div> it works!!</div>
+<div fxLayout="column" class="components-container-gt-xs" [ngClass.xs]="'components-container-xs'" fxLayoutGap="20px">
+
+  <div fxFlex class="table-component-holder mat-elevation-z4">
+    <mat-toolbar class="table-header">
+      <h1 class="mat-headline center-align">Courses</h1>
+    </mat-toolbar>
+
+    <div class="table-container">
+      <mat-table #table [dataSource]="dataSource">
+
+        <!-- code Column -->
+        <ng-container matColumnDef="code">
+          <mat-header-cell *matHeaderCellDef> Code</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.code}}</mat-cell>
+        </ng-container>
+
+        <!-- name Column -->
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.name}}</mat-cell>
+        </ng-container>
+
+        <!-- section Column -->
+        <ng-container matColumnDef="section">
+          <mat-header-cell *matHeaderCellDef> Section</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.section}}</mat-cell>
+        </ng-container>
+
+        <!-- credit Column -->
+        <ng-container matColumnDef="credit">
+          <mat-header-cell *matHeaderCellDef> Credit</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.credit}}</mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: columns;"
+                 (click)="view(row)"></mat-row>
+
+      </mat-table>
+
+    </div>
+  </div>
+</div>
