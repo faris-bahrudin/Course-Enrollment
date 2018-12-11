@@ -15,4 +15,12 @@ export class CourseListPage {
   constructor(private courseEnrollmentService: CourseEnrollmentService) {
   }
 
+  ngOnInit(){
+    this.dataSource=this.courseEnrollmentService.findCourses();
+  }
+
+  view(course: Course): void{
+    console.log(JSON.stringify(course));
+  }
+
 }
