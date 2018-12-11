@@ -10,7 +10,7 @@ import {CourseEnrollmentService} from '../../services/course-enrollment.service'
 })
 export class LecturerListPage implements OnInit {
 
-  public columns = ['id', 'lecturername', 'staffnumber', 'email'];
+  public columns = ['id', 'lecturerName', 'staffNumber', 'email'];
   public dataSource: Observable<Lecturer[]>;
 
   constructor(private courseEnrollmentService: CourseEnrollmentService) {
