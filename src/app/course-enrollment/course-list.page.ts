@@ -1,13 +1,18 @@
 import {Component} from '@angular/core';
+import {Course} from './course.model';
+import {Observable} from 'rxjs';
+import {CourseEnrollmentService} from '../../services/course-enrollment.service';
 
 @Component({
   selector: 'trg-apprentice-list',
-  templateUrl: './apprentice-list.page.html',
+  templateUrl: './course-list.page.html',
 })
 export class CourseListPage {
 
+  public columns = ['code', 'name', 'section', 'credit'];
+  public dataSource: Observable<Course[]>;
 
-  constructor() {
+  constructor(private courseEnrollmentService: CourseEnrollmentService) {
   }
 
 }
