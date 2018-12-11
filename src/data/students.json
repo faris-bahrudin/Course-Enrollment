@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Faris",
+    "matrixno": "IET 13004",
+    "email": "Faris@gmail.com",
+    "program": "bachelor degree of electronic",
+    "faculty": "faculty of engineering",
+    "semester": "semester 1 2012/2013",
+    "phone": "7736525"
+  },
+  {
+    "name": "Hannah",
+    "matrixno": "IET 13005",
+    "email": "Hannah@gmail.com",
+    "program": "bachelor degree of mathematics",
+    "faculty": "faculty of science",
+    "semester": "semester 1 2012/2013",
+    "phone": "7736526"
+  },
+  {
+    "name": "Hafidz",
+    "matrixno": "IET 13006",
+    "email": "Hafidz@gmail.com",
+    "program": "bachelor degree of information technology",
+    "faculty": "faculty of technology",
+    "semester": "semester 1 2012/2013",
+    "phone": "7736527"
+  }
+]
