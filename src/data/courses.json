@@ -1,0 +1,32 @@
+[
+  {
+    "courseCode": "SSCP4173" ,
+    "courseName": "Quantum Mechanics II",
+    "section": "01",
+    "credit": 3
+  },
+  {
+    "courseCode": "SSCP4433" ,
+    "courseName": "Magnetism",
+    "section": "01",
+    "credit": 3
+  },
+  {
+    "courseCode": "SSCP4453" ,
+    "courseName": "Low Temperature & Conductivity",
+    "section": "01",
+    "credit": 3
+  },
+  {
+    "courseCode": "SSCP4153" ,
+    "courseName": "Laser Physics",
+    "section": "01",
+    "credit": 3
+  },
+  {
+    "courseCode": "SSCU4904" ,
+    "courseName": "Final Year Project II",
+    "section": "02",
+    "credit": 4
+  }
+]
