@@ -1,0 +1,26 @@
+[
+  {
+    "id": 100,
+    "lecturer name": "Mr. Uda",
+    "staff no.": "CHT001",
+    "email": "uda@terang.asia"
+  },
+  {
+    "id": 200,
+    "lecturer name": "Mr. Is",
+    "staff no.": "CHT002",
+    "email": "is@terang.asia"
+  },
+  {
+    "id": 300,
+    "lecturer name": "Mr. Acap",
+    "staff no.": "CHT003",
+    "email": "acap@terang.asia"
+  },
+  {
+    "id": 400,
+    "lecturer name": "Mr. Emang",
+    "staff no.": "CHT004",
+    "email": "emang@terang.asia"
+  }
+]
