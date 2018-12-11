@@ -12,6 +12,7 @@ import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {CohortStatusPipe} from './academy/cohort-status.pipe';
 import {CourseEnrollmentModule} from './course-enrollment/course-enrollment.module';
+import {CourseEnrollmentService} from '../services/course-enrollment.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import {CourseEnrollmentModule} from './course-enrollment/course-enrollment.modu
     AcademyModule,
     CourseEnrollmentModule,
   ],
-  providers: [AcademyService],
+  providers: [CourseEnrollmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
