@@ -20,6 +20,13 @@ export const menus = [
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
+      {
+        'name': 'All Lecturers',
+        'icon': 'filter_list',
+        'link': '/course-enrollment/lecturers/list',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
+      }
     ]
   }
 ];
