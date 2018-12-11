@@ -24,6 +24,8 @@ import {
 
 import {MatTableModule} from '@angular/material/table';
 import {StudentListPage} from './student-list.page';
+import {LecturerListPage} from './lecturer-list.page';
+import {CourseListPage} from './course-list.page';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import {StudentListPage} from './student-list.page';
     MatButtonToggleModule,
   ],
   declarations: [
-    StudentListPage
+    StudentListPage,
+    LecturerListPage,
+    CourseListPage,
   ],
   exports: []
 
