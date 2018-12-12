@@ -15,25 +15,25 @@
 
         <!--code-->
         <mat-form-field class="width">
-          <input type="text" matInput placeholder="Enter Code" formControlName="code" readonly>
+          <input matInput placeholder="Enter Code" formControlName="code" readonly>
         </mat-form-field>
 
         <!--name-->
         <mat-form-field class="width">
-          <input type="text" matInput placeholder="Enter Name" formControlName="name" readonly>
+          <input matInput placeholder="Enter Name" formControlName="name" readonly>
         </mat-form-field>
 
         <!--section-->
         <mat-form-field class="width">
-          <input type="text" matInput placeholder="Enter Section" formControlName="section" readonly>
+          <input matInput placeholder="Enter Section" formControlName="section" readonly>
         </mat-form-field>
 
         <!--credit-->
         <mat-form-field class="width">
-          <input type="number" matInput placeholder="Enter Credit" formControlName="section" readonly>
+          <input matInput placeholder="Enter Credit" formControlName="credit" readonly>
         </mat-form-field>
 
-        <button style="font-weight: bold;" mat-raised-button type="submit" class="mat-headline center-align">Submit
+        <button style="font-weight: bold;" mat-raised-button (click)="back()" type="button" class="mat-headline center-align">Back
         </button>
       </form>
     </div>

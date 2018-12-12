@@ -3,6 +3,7 @@ import {CourseEnrollmentService} from '../../services/course-enrollment.service'
 import {Observable} from 'rxjs';
 import {Course} from './course.model';
 import {Component, OnInit} from '@angular/core';
+import {Route, Router} from '@angular/router';
 @Component({
   selector: 'trg-course-detail',
   templateUrl: './course-detail.page.html',
@@ -13,6 +14,7 @@ export class CourseDetailPage implements OnInit {
   course$: Observable<Course> = null;
 
   constructor(private form: FormBuilder,
+              private router: Router,
               private courseEnrollmentService: CourseEnrollmentService) {
     this.mainForm = this.form.group({
       code: ['', Validators.required],
@@ -30,10 +32,11 @@ export class CourseDetailPage implements OnInit {
     this.course$.subscribe(course => this.mainForm.patchValue(course));
   }
 
-  onSubmit() {
-    console.log('');
-    this.submitted = true;
+  back(course: Course): void{
+    console.log(JSON.stringify(course));
+    this.router.navigate(['/course-enrollment/courses/list']);
   }
+
 
 
 }
