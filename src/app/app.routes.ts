@@ -9,6 +9,7 @@ import {StudentListPage} from './course-enrollment/student-list.page';
 import {LecturerListPage} from './course-enrollment/lecturer-list.page';
 import {CourseListPage} from './course-enrollment/course-list.page';
 import {LecturerDetailPage} from './course-enrollment/lecturer-detail.page';
+import {CourseDetailPage} from './course-enrollment/course-detail.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -16,6 +17,8 @@ export const appRoutes: Routes = [{
     {path: 'course-enrollment/students/list', component: StudentListPage},
     {path: 'course-enrollment/lecturers/list', component: LecturerListPage},
     {path: 'course-enrollment/lecturer/detail', component: LecturerDetailPage},
+    {path: 'course-enrollment/lecturer/detail/:id', component: LecturerDetailPage},
     {path: 'course-enrollment/courses/list', component: CourseListPage},
+    {path: 'course-enrollment/courses/:code', component: CourseDetailPage},
   ]
 }];

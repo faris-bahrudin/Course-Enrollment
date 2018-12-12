@@ -31,7 +31,7 @@ export class CourseEnrollmentService {
     return this.http.get<Lecturer[]>('data/lecturers.json');
   }
 
-  findLecturer(): Observable<Lecturer> {
+  findLecturer(id: number): Observable<Lecturer> {
     return this.http.get<Lecturer>('data/lecturer.json');
   }
 

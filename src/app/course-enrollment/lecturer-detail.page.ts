@@ -1,27 +1,41 @@
-import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
 import {Lecturer} from './lecturer.model';
 import {CourseEnrollmentService} from '../../services/course-enrollment.service';
-
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'trg-lecturer-detail',
+  selector: 'trg-apprentice-detail',
   templateUrl: './lecturer-detail.page.html',
+  styleUrls: ['./lecturer-detail.page.scss']
 })
 export class LecturerDetailPage implements OnInit {
+  mainForm: FormGroup;
+  submitted = false;
+  lecturer$: Observable<Lecturer> = null;
 
-  public columns = ['id', 'lecturerName', 'staffNumber', 'email'];
-  public dataSource: Observable<Lecturer>;
-
-  constructor(private courseEnrollmentService: CourseEnrollmentService) {
-  }
+  constructor(private form: FormBuilder,
+              private courseEnrollmentService: CourseEnrollmentService) {
+    this.mainForm = this.form.group({
+      id: ['', Validators.required],
+      lecturerName: ['', Validators.required],
+      staffNumber: ['', Validators.required],
+      ic: ['', Validators.required],
+      gender: ['', Validators.required],
+      field: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['', Validators.required],
+    });
+}
 
   ngOnInit() {
-    this.dataSource = this.courseEnrollmentService.findLecturer();
+    this.lecturer$ = this.courseEnrollmentService.findLecturer(100);
+
+    this.lecturer$.subscribe(lecturer => this.mainForm.patchValue(lecturer));
   }
 
-  view(lecturer: Lecturer): void {
-    console.log(JSON.stringify(lecturer));
-    // this.router.navigate(['/academy/students/', cohort.code]);
+  onSubmit() {
+    console.log('');
+    this.submitted = true;
   }
 }
