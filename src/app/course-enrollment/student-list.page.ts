@@ -23,7 +23,7 @@ export class StudentListPage implements OnInit {
 
   view(student: Student): void {
     console.log(JSON.stringify(student));
-    this.router.navigate(['/course-enrollment/students/', student.name]);
+    this.router.navigate(['/course-enrollment/students/', student.matrixno]);
   }
 }
 

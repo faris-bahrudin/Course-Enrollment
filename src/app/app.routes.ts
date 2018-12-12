@@ -16,7 +16,7 @@ export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
     {path: 'dashboard', component: DashboardComponent},
     {path: 'course-enrollment/students/list', component: StudentListPage},
-    {path: 'course-enrollment/students/:name', component: StudentDetailPage},
+    {path: 'course-enrollment/students/:matrixno', component: StudentDetailPage},
     {path: 'course-enrollment/lecturers/list', component: LecturerListPage},
     {path: 'course-enrollment/lecturer/detail', component: LecturerDetailPage},
     {path: 'course-enrollment/lecturer/detail/:id', component: LecturerDetailPage},
