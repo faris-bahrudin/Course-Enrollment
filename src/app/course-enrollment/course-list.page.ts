@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Course} from './course.model';
 import {Observable} from 'rxjs';
 import {CourseEnrollmentService} from '../../services/course-enrollment.service';
@@ -8,9 +8,9 @@ import {Router} from '@angular/router';
   selector: 'trg-course-list',
   templateUrl: './course-list.page.html',
 })
-export class CourseListPage implements OnInit {
+export class CourseListPage {
 
-  public columns = ['code', 'name'];
+  public columns = ['code', 'name', 'section', 'credit'];
   public dataSource: Observable<Course[]>;
 
   constructor(private courseEnrollmentService: CourseEnrollmentService,

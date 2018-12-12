@@ -58,13 +58,11 @@ import {CourseDetailPage} from './course-detail.page';
   ],
   declarations: [
     CourseListPage,
+    CourseDetailPage,
     LecturerListPage,
     LecturerDetailPage,
     StudentListPage,
-    LecturerListPage,
-    StudentListPage,
     StudentDetailPage,
-    CourseDetailPage,
   ],
   exports: []
 
