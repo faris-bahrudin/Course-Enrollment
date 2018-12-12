@@ -15,21 +15,21 @@ export const menus = [
     'sub': [
       {
         'name': 'All Courses',
-        'icon': 'filter_list',
+        'icon': 'school',
         'link': '/course-enrollment/courses/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
       {
         'name': 'All Lecturers',
-        'icon': 'filter_list',
+        'icon': 'person',
         'link': '/course-enrollment/lecturers/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
       {
         'name': 'All Student',
-        'icon': 'filter_list',
+        'icon': 'person',
         'link': '/course-enrollment/students/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,

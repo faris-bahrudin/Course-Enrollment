@@ -3,24 +3,40 @@
     "id": 100,
     "lecturerName": "Mr. Uda",
     "staffNumber": "CHT001",
-    "email": "uda@terang.asia"
+    "ic": "851001106127",
+    "gender": "MALE",
+    "field": "Software Developer",
+    "email": "uda@terang.asia",
+    "phone": "+60192676946"
   },
   {
     "id": 200,
     "lecturerName": "Mr. Is",
     "staffNumber": "CHT002",
-    "email": "is@terang.asia"
+    "ic": "851001106127",
+    "gender": "MALE",
+    "field": "Software Developer",
+    "email": "is@terang.asia",
+    "phone": "+60192676946"
   },
   {
     "id": 300,
     "lecturerName": "Mr. Acap",
     "staffNumber": "CHT003",
-    "email": "acap@terang.asia"
+    "ic": "851001106127",
+    "gender": "MALE",
+    "field": "Software Developer",
+    "email": "acap@terang.asia",
+    "phone": "+60192676946"
   },
   {
     "id": 400,
     "lecturerName": "Mr. Emang",
     "staffNumber": "CHT004",
-    "email": "emang@terang.asia"
+    "ic": "851001106127",
+    "gender": "MALE",
+    "field": "Software Developer",
+    "email": "emang@terang.asia",
+    "phone": "+60192676946"
   }
 ]

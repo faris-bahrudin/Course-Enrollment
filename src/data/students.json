@@ -1,7 +1,7 @@
 [
   {
     "name": "Faris",
-    "matrixno": "IET 13004",
+    "matrixno": "IET13004",
     "email": "Faris@gmail.com",
     "program": "bachelor degree of electronic",
     "faculty": "faculty of engineering",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Hannah",
-    "matrixno": "IET 13005",
+    "matrixno": "IET13005",
     "email": "Hannah@gmail.com",
     "program": "bachelor degree of mathematics",
     "faculty": "faculty of science",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Hafidz",
-    "matrixno": "IET 13006",
+    "matrixno": "IET13006",
     "email": "Hafidz@gmail.com",
     "program": "bachelor degree of information technology",
     "faculty": "faculty of technology",

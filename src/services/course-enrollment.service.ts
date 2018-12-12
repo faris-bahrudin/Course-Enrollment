@@ -23,12 +23,16 @@ export class CourseEnrollmentService {
     return this.http.get<Student[]>('data/students.json');
   }
 
-  findStudent(name: string): Observable<Student> {
-    return this.http.get<Student>('data/students.json');
+  findStudent(matrixno: string): Observable<Student> {
+    return this.http.get<Student>('data/student-' + matrixno + '.json');
   }
 
   findLecturers(): Observable<Lecturer[]> {
     return this.http.get<Lecturer[]>('data/lecturers.json');
+  }
+
+  findLecturerById(id: number): Observable<Lecturer> {
+    return this.http.get<Lecturer>('data/lecturers.json' + id);
   }
 
   findLecturer(id: number): Observable<Lecturer> {
