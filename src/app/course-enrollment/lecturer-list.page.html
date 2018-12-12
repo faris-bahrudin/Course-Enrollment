@@ -14,22 +14,16 @@
           <mat-cell *matCellDef="let row"> {{row.id}}</mat-cell>
         </ng-container>
 
-        <!-- code Column -->
+        <!-- Name Column -->
         <ng-container matColumnDef="lecturerName">
           <mat-header-cell *matHeaderCellDef>Lecturer Name</mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.lecturerName}}</mat-cell>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- Staff Number Column -->
         <ng-container matColumnDef="staffNumber">
           <mat-header-cell *matHeaderCellDef> Staff No.</mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.staffNumber}}</mat-cell>
-        </ng-container>
-
-        <!-- Name Column -->
-        <ng-container matColumnDef="email">
-          <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.email}}</mat-cell>
         </ng-container>
 
         <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
