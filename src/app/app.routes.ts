@@ -18,8 +18,7 @@ export const appRoutes: Routes = [{
     {path: 'course-enrollment/students/list', component: StudentListPage},
     {path: 'course-enrollment/students/:matrixno', component: StudentDetailPage},
     {path: 'course-enrollment/lecturers/list', component: LecturerListPage},
-    {path: 'course-enrollment/lecturer/detail', component: LecturerDetailPage},
-    {path: 'course-enrollment/lecturer/detail/:id', component: LecturerDetailPage},
+    {path: 'course-enrollment/lecturer/:id', component: LecturerDetailPage},
     {path: 'course-enrollment/courses/list', component: CourseListPage},
     {path: 'course-enrollment/courses/:code', component: CourseDetailPage},
   ]
