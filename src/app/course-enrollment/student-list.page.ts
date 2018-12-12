@@ -13,7 +13,8 @@ export class StudentListPage implements OnInit {
   public columns = ['name', 'matrixno', 'email', 'program', 'faculty', 'semester', 'phone'];
   public dataSource: Observable<Student[]>;
 
-  constructor(private courseEnrollmentService: CourseEnrollmentService) {
+  constructor(private courseEnrollmentService: CourseEnrollmentService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -22,7 +23,7 @@ export class StudentListPage implements OnInit {
 
   view(student: Student): void {
     console.log(JSON.stringify(student));
-    // this.router.navigate(['/academy/students/', cohort.code]);
+    this.router.navigate(['/course-enrollment/students/', student.name]);
   }
 }
 

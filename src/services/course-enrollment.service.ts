@@ -23,8 +23,8 @@ export class CourseEnrollmentService {
     return this.http.get<Student[]>('data/students.json');
   }
 
-  findStudent(): Observable<Student> {
-    return this.http.get<Student>('data/student.json');
+  findStudent(name: string): Observable<Student> {
+    return this.http.get<Student>('data/students.json');
   }
 
   findLecturers(): Observable<Lecturer[]> {
