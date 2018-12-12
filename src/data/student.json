@@ -1,9 +1,19 @@
-{
-  "name": "Ahmad",
+[{
+  "name": "Faris",
   "matrixno": "IET 13004",
-  "email": "Ahmad.Rahman@gmail.com",
-  "program": "bachelor degree of mathematics",
-  "faculty": "faculty of science",
+  "email": "Faris@gmail.com",
+  "program": "bachelor degree of electronic",
+  "faculty": "faculty of engineering",
   "semester": "semester 1 2012/2013",
-  "phone": "7736524"
+  "phone": "7736525"
+},
+{
+"name": "Hannah",
+"matrixno": "IET 13005",
+"email": "Hannah@gmail.com",
+"program": "bachelor degree of mathematics",
+"faculty": "faculty of science",
+"semester": "semester 1 2012/2013",
+"phone": "7736526"
 }
+]

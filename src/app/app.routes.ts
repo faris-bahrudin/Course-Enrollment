@@ -8,6 +8,7 @@ import {CohortDetailPage} from './academy/cohort-detail.page';
 import {StudentListPage} from './course-enrollment/student-list.page';
 import {LecturerListPage} from './course-enrollment/lecturer-list.page';
 import {CourseListPage} from './course-enrollment/course-list.page';
+import {StudentDetailPage} from './course-enrollment/student-detail.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -17,6 +18,7 @@ export const appRoutes: Routes = [{
     {path: 'academy/apprentices/list', component: ApprenticeListPage},
     {path: 'academy/apprentices/:code', component: ApprenticeDetailPage},
     {path: 'course-enrollment/students/list', component: StudentListPage},
+    {path: 'course-enrollment/students/:name', component: StudentDetailPage},
     {path: 'course-enrollment/lecturers/list', component: LecturerListPage},
     {path: 'course-enrollment/courses/list', component: CourseListPage},
   ]
