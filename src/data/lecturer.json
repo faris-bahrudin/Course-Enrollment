@@ -2,5 +2,9 @@
   "id": 100,
   "lecturerName": "Mr. Uda",
   "staffNumber": "CHT001",
-  "email": "uda@terang.asia"
+  "ic": "851001106127",
+  "gender": "MALE",
+  "field": "Software Developer",
+  "email": "uda@terang.asia",
+  "phone": "+60192676946"
 }

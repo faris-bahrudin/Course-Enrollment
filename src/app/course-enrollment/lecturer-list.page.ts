@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Lecturer} from './lecturer.model';
 import {Observable} from 'rxjs';
 import {CourseEnrollmentService} from '../../services/course-enrollment.service';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -13,7 +14,8 @@ export class LecturerListPage implements OnInit {
   public columns = ['id', 'lecturerName', 'staffNumber', 'email'];
   public dataSource: Observable<Lecturer[]>;
 
-  constructor(private courseEnrollmentService: CourseEnrollmentService) {
+  constructor(private courseEnrollmentService: CourseEnrollmentService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -22,6 +24,6 @@ export class LecturerListPage implements OnInit {
 
   view(lecturer: Lecturer): void {
     console.log(JSON.stringify(lecturer));
-    // this.router.navigate(['/academy/students/', cohort.code]);
+    this.router.navigate(['/course-enrollment/lecturer/detail/', lecturer.id]);
   }
 }

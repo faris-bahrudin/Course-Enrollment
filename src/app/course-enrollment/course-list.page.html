@@ -20,6 +20,18 @@
           <mat-cell *matCellDef="let row"> {{row.name}}</mat-cell>
         </ng-container>
 
+        <!-- section Column -->
+        <ng-container matColumnDef="section">
+          <mat-header-cell *matHeaderCellDef> Section</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.section}}</mat-cell>
+        </ng-container>
+
+        <!-- credit Column -->
+        <ng-container matColumnDef="credit">
+          <mat-header-cell *matHeaderCellDef> Credit</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.credit}}</mat-cell>
+        </ng-container>
+
         <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: columns;"
                  (click)="view(row)"></mat-row>
