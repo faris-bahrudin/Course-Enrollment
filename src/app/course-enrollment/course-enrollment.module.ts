@@ -26,6 +26,7 @@ import {MatTableModule} from '@angular/material/table';
 import {StudentListPage} from './student-list.page';
 import {LecturerListPage} from './lecturer-list.page';
 import {CourseListPage} from './course-list.page';
+import {CourseDetailPage} from './course-detail.page';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import {CourseListPage} from './course-list.page';
     StudentListPage,
     LecturerListPage,
     CourseListPage,
+    CourseDetailPage,
   ],
   exports: []
 
