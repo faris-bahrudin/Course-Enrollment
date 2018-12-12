@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {Student} from './student.model';
 import {CourseEnrollmentService} from '../../services/course-enrollment.service';
@@ -18,6 +18,15 @@ export class StudentDetailPage implements OnInit {
               private courseEnrollmentService: CourseEnrollmentService,
               private route: ActivatedRoute
               ) {
+    this.mainForm = this.form.group({
+      name: ['', Validators.required],
+      matrixno: ['', Validators.required],
+      email: ['', Validators.required],
+      program: ['', Validators.required],
+      faculty: ['', Validators.required],
+      semester: ['', Validators.required],
+      phone: ['', Validators.required],
+    });
   }
 
   ngOnInit() {
