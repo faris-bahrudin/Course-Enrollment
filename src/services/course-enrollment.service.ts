@@ -16,7 +16,7 @@ export class CourseEnrollmentService {
   }
 
   findCourse(code:string): Observable<Course> {
-    return this.http.get<Course>('data/course.json/');
+    return this.http.get<Course>('data/course.json');
   }
 
   findStudents(): Observable<Student[]> {
