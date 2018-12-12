@@ -11,7 +11,7 @@ import {Router} from '@angular/router';
 })
 export class LecturerListPage implements OnInit {
 
-  public columns = ['id', 'lecturerName', 'staffNumber', 'email'];
+  public columns = ['id', 'lecturerName', 'staffNumber'];
   public dataSource: Observable<Lecturer[]>;
 
   constructor(private courseEnrollmentService: CourseEnrollmentService,

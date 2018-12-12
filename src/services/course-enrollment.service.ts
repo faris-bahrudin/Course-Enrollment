@@ -31,6 +31,10 @@ export class CourseEnrollmentService {
     return this.http.get<Lecturer[]>('data/lecturers.json');
   }
 
+  findLecturerById(id: number): Observable<Lecturer> {
+    return this.http.get<Lecturer>('data/lecturers.json' + id);
+  }
+
   findLecturer(id: number): Observable<Lecturer> {
     return this.http.get<Lecturer>('data/lecturer.json');
   }
