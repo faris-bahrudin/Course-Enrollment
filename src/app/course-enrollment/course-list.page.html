@@ -8,13 +8,13 @@
     <div class="table-container">
       <mat-table #table [dataSource]="dataSource">
 
-        <!-- code Column -->
+        <!-- Code Column -->
         <ng-container matColumnDef="code">
           <mat-header-cell *matHeaderCellDef> Code</mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.code}}</mat-cell>
         </ng-container>
 
-        <!-- name Column -->
+        <!-- Name Column -->
         <ng-container matColumnDef="name">
           <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.name}}</mat-cell>
