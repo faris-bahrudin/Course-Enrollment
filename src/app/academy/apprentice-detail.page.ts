@@ -30,6 +30,7 @@ export class ApprenticeDetailPage implements OnInit {
     this.apprentice$.subscribe(apprentice => this.mainForm.patchValue(apprentice));
   }
 
+
   onSubmit() {
     console.log('');
     this.submitted = true;

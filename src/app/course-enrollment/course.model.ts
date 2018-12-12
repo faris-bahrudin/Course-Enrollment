@@ -1,6 +1,6 @@
-export interface  Course {
+export interface Course {
   code: string;
   name: string;
   section: string;
-  credit: string;
-  }
+  credit: number;
+}

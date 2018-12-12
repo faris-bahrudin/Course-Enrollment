@@ -14,8 +14,8 @@ export class CourseDetailPage implements OnInit {
   course$: Observable<Course> = null;
 
   constructor(private form: FormBuilder,
-              private router: Router,
-              private courseEnrollmentService: CourseEnrollmentService) {
+              private courseEnrollmentService: CourseEnrollmentService,
+              private router: Router) {
     this.mainForm = this.form.group({
       code: ['', Validators.required],
       name: ['', Validators.minLength(6)],
