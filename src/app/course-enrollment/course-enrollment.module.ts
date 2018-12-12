@@ -27,6 +27,7 @@ import {StudentListPage} from './student-list.page';
 import {LecturerListPage} from './lecturer-list.page';
 import {CourseListPage} from './course-list.page';
 import {StudentDetailPage} from './student-detail.page';
+import {CourseDetailPage} from './course-detail.page';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import {StudentDetailPage} from './student-detail.page';
     LecturerListPage,
     StudentListPage,
     StudentDetailPage,
+    CourseDetailPage,
   ],
   exports: []
 
