@@ -24,6 +24,6 @@ export class LecturerListPage implements OnInit {
 
   view(lecturer: Lecturer): void {
     console.log(JSON.stringify(lecturer));
-    this.router.navigate(['/course-enrollment/lecturer/detail/', lecturer.id]);
+    this.router.navigate(['/course-enrollment/lecturer/', lecturer.id]);
   }
 }
