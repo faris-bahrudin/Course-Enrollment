@@ -33,7 +33,22 @@ export const menus = [
         'link': '/course-enrollment/students/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
+      },
+      {
+        'name': 'Makeups',
+        'icon': 'person',
+        'link': '/course-enrollment/makeup/list',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
+      },
+      {
+        'name': 'Maybelline',
+        'icon': 'person',
+        'link': '/course-enrollment/maybelline/list',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
       }
+
     ]
   }
 ];

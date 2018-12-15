@@ -11,6 +11,9 @@ import {CourseListPage} from './course-enrollment/course-list.page';
 import {LecturerDetailPage} from './course-enrollment/lecturer-detail.page';
 import {CourseDetailPage} from './course-enrollment/course-detail.page';
 import {StudentDetailPage} from './course-enrollment/student-detail.page';
+import {MakeupListPage} from './course-enrollment/makeup-list.page';
+import {MaybeListPage} from './course-enrollment/maybe-list.page';
+import {MakeupDetailPage} from './course-enrollment/makeup-detail.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -21,5 +24,8 @@ export const appRoutes: Routes = [{
     {path: 'course-enrollment/lecturer/:id', component: LecturerDetailPage},
     {path: 'course-enrollment/courses/list', component: CourseListPage},
     {path: 'course-enrollment/courses/:code', component: CourseDetailPage},
+    {path: 'course-enrollment/makeup/list', component: MakeupListPage},
+    {path: 'course-enrollment/makeup/:id', component: MakeupDetailPage},
+    {path: 'course-enrollment/maybelline/list', component: MaybeListPage},
   ]
 }];
